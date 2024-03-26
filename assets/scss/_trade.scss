@@ -1,0 +1,119 @@
+.trade-section{
+    padding-bottom: 100px;
+}
+.trade-content{
+    padding-top: 60px;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-bottom: 40px;
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 230px;
+                padding: 10px 10px;
+                color: #F02F66;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 36px; 
+                border-radius: 30px;
+                border: 2px solid rgba(240, 47, 102, 0.50);
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+.trade-address-section{
+    border-radius: 35px;
+    border: 2px solid rgba(240, 47, 102, 0.50);
+    background: #FFF;
+    height: 60px;
+    max-width: 690px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 33px;
+    .trade-dropdown{
+        max-width: 200px;
+        min-width: 200px;
+        position: relative;
+        border-right: 2px solid rgba(240, 47, 102, 0.50);
+        select{
+            border: none;
+            outline: none;
+            background: transparent;
+            color: #111;
+            text-align: center;
+            font-family: "DM Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            height: 58px;
+            width: 100%;
+            text-align: left;
+            padding: 5px 25px;
+            appearance: none;
+        }
+        &::after{
+            content: url(../../assets/images/icons/drop-icon.svg);
+            position: absolute;
+            right: 16px;
+            top: 13px;
+        }
+    }
+    .trade-address{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        .hidden {
+            display: none;
+        }
+        p{
+            color: #111;
+            font-family: "DM Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px;
+            margin-bottom: 0px;
+        }
+        .copy-btn{
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 0px;
+        }
+        .copied {
+            display: none;
+            color: #F02F66;
+            font-size: 14px;
+        }
+    }
+}
+.trade-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    max-width: 390px;
+    width: 100%;
+    margin: auto;
+}

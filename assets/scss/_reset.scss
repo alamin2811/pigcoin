@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFEFED;
+    color: #333;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.container {
+    max-width: 1760px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat Alternates";
+    font-weight: 700;
+    color: #111;
+    line-height: 150%;
+}
+h1 {
+    font-size: 60px;
+    line-height: 80px;
+}
+h2{
+    font-size: 40px;
+    line-height: 150%;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 22px;
+}
+h6{
+    font-size: 18px;
+}
+.section-title{
+    text-align: center;
+    p{
+        margin-bottom: 0px;
+    }
+}
+@keyframes smoothSlider {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+

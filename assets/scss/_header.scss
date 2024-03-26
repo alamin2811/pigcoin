@@ -1,0 +1,48 @@
+.pigcoin-header{
+    gap: 20px;
+}
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 20px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.header-right a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-btn{
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    &.buy-btn {
+        border-radius: 50px;
+        background: #F02F66;
+        box-shadow: 0px 3px 0px 0px #9D2245;
+        height: 50px;
+        width: 150px;
+        color: #FFFFFF;
+    }
+    &.tweet-btn {
+        border-radius: 50px;
+        border: 2px solid rgba(240, 47, 102, 0.50);
+        background: #FFEFED;
+        box-shadow: 0px 3px 0px 0px #9D2245;
+        height: 50px;
+        width: 150px;
+        color: #F02F66;
+    }
+}

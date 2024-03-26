@@ -1,0 +1,22 @@
+.pig-sticker-section {}
+
+.pig-sticker-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 60px;
+    overflow: hidden;
+    gap: 85px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        gap: 85px;
+        animation: smoothSlider 30s linear infinite;
+    }
+}
+
