@@ -1,0 +1,45 @@
+.checkin-section{
+    padding-top: 120px;
+}
+.checkin-card{
+    border-radius: 70px;
+    border: 2px solid rgba(0, 0, 0, 0.40);
+    background: #FFEFED;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.40);
+    max-width: 570px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 35px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    .pig-icon{
+        min-height: 60px;
+        min-width: 60px;
+        max-height: 60px;
+        max-width: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.pig-checkin-text{
+    text-align: left;
+    h5{
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+}

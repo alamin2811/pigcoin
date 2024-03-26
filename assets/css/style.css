@@ -284,6 +284,8 @@ h6 {
   justify-content: flex-start;
   margin: 0px -25px;
   flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
 }
 .what-is-pigcoin-card ul li {
   padding: 0px 25px;
@@ -423,8 +425,56 @@ h6 {
   animation: smoothSlider 30s linear infinite;
 }
 
+.checkin-section {
+  padding-top: 120px;
+}
+
+.checkin-card {
+  border-radius: 70px;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background: #FFEFED;
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.4);
+  max-width: 570px;
+  width: 100%;
+  margin: auto;
+  padding: 20px 35px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.checkin-card .pig-icon {
+  min-height: 60px;
+  min-width: 60px;
+  max-height: 60px;
+  max-width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkin-card .pig-icon img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.pig-checkin-text {
+  text-align: left;
+}
+.pig-checkin-text h5 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.pig-checkin-text p {
+  margin-bottom: 0px;
+}
+
 .tokenomics-section {
-  padding-top: 140px;
+  padding-top: 117px;
   padding-bottom: 120px;
 }
 .tokenomics-section .section-title {
@@ -467,6 +517,7 @@ h6 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 90%;
 }
 .tokenomics-card p {
   margin-bottom: 0px;
