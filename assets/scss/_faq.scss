@@ -42,12 +42,12 @@
                 position: absolute;
                 right: 30px;
                 top: 26px;
-                transition: 0.3s;
+                transition: 0.5s;
             }
             &:not(.collapsed){
                 color: #111;
                 &::before{
-                    transform: rotate(135deg);
+                    transform: rotate(315deg);
                 }
             }
             &::after{

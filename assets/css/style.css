@@ -379,13 +379,13 @@ h6 {
   position: absolute;
   right: 30px;
   top: 26px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .pig-accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: #111;
 }
 .pig-accordion-item .accordion-header .accordion-button:not(.collapsed)::before {
-  transform: rotate(135deg);
+  transform: rotate(315deg);
 }
 .pig-accordion-item .accordion-header .accordion-button::after {
   display: none !important;
