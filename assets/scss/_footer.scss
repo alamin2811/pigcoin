@@ -1,0 +1,21 @@
+.pig-coin-footer{
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+.pig-coin-footer-content{
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        max-width: 260px;
+        width: 100%;
+        margin: auto;
+    }
+    p{
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+}

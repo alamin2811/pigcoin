@@ -192,7 +192,7 @@ h6 {
   border: 2px solid rgba(240, 47, 102, 0.5);
   padding: 10px;
   box-shadow: 0px 3px 0px 0px transparent;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .banner-content ul.banner-btn-list1 button:hover {
   border-radius: 30px;
@@ -216,7 +216,7 @@ h6 {
   line-height: 200%;
   text-transform: uppercase;
   border: none;
-  transition: 0.3s;
+  transition: 0.4s;
   position: relative;
 }
 .banner-content ul.chart-list li .chart-btn::after {
@@ -246,7 +246,7 @@ h6 {
   border: 2px solid rgba(0, 0, 0, 0.2);
   padding: 10px;
   box-shadow: 0px 3px 0px 0px transparent;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .banner-content ul.banner-btn-list2 button:hover {
   border-radius: 30px;
@@ -437,18 +437,16 @@ h6 {
   max-width: 570px;
   width: 100%;
   margin: auto;
-  padding: 20px 35px;
+  padding: 15px 35px 15px 24px;
   margin-top: 35px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 20px;
 }
 .checkin-card .pig-icon {
-  min-height: 60px;
-  min-width: 60px;
-  max-height: 60px;
-  max-width: 60px;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -461,6 +459,90 @@ h6 {
   height: 100%;
   width: 100%;
 }
+.checkin-card .progress {
+  min-height: 80px;
+  min-width: 80px;
+  max-height: 80px;
+  max-width: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkin-card .progress::after {
+  content: "";
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+}
+.checkin-card .progress .overlay {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: transparent;
+}
+.checkin-card .progress .left,
+.checkin-card .progress .right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 3px solid #F02F66;
+  border-radius: 100px 0px 0px 100px;
+  border-right: 0;
+  transform-origin: right;
+}
+.checkin-card .progress .left {
+  animation: load1 1s linear forwards;
+}
+.checkin-card .progress:nth-of-type(2) .right, .checkin-card .progress:nth-of-type(3) .right {
+  animation: load2 0.5s linear forwards 1s;
+}
+.checkin-card .progress:last-of-type .right, .checkin-card .progress:first-of-type .right {
+  animation: load3 0.8s linear forwards 1s;
+}
+
+.checkin-card-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.checkin-card-btn {
+  border-radius: 30px;
+  border: 2px solid rgba(240, 47, 102, 0.5);
+  min-width: 150px;
+  color: #F02F66;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px; /* 200% */
+  text-transform: uppercase;
+  padding: 10px;
+  background: transparent;
+  transition: 0.4s;
+}
+.checkin-card-btn:hover {
+  color: #9D2245;
+  border-radius: 30px;
+  border: 2px solid #9D2245;
+  background: #FFEFED;
+  box-shadow: 0px 3px 0px 0px #9D2245;
+}
 
 .pig-checkin-text {
   text-align: left;
@@ -471,6 +553,90 @@ h6 {
 }
 .pig-checkin-text p {
   margin-bottom: 0px;
+}
+
+@keyframes load1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
+  100% {
+    z-index: 100;
+    transform: rotate(270deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    z-index: 100;
+    transform: rotate(180deg);
+  }
+  100% {
+    z-index: 100;
+    transform: rotate(315deg);
+  }
+}
+.checkin-list {
+  max-width: 570px;
+  width: 100%;
+  margin: auto;
+  padding-top: 40px;
+}
+.checkin-list ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.checkin-list ul li {
+  border-radius: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: #FFF;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+}
+.checkin-list ul li .list-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.checkin-list ul li .list-left h6 {
+  margin-bottom: 0px;
+  color: #111;
+  font-family: "DM Sans";
+  font-weight: 500;
+  line-height: 36px;
+}
+.checkin-list ul li .list-left h6 a {
+  color: #111;
+  font-weight: 700;
+  text-decoration: none;
+}
+.checkin-list ul li .list-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+.checkin-list ul li .list-right span {
+  color: #1BCA41;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.checkin-list ul li .list-right span img {
+  margin-right: 4px;
 }
 
 .tokenomics-section {
@@ -687,6 +853,7 @@ h6 {
   position: absolute;
   left: 0px;
   top: 0px;
+  z-index: 1;
 }
 .community-list::before {
   content: "";
@@ -696,4 +863,26 @@ h6 {
   position: absolute;
   right: 0px;
   top: 0px;
+  z-index: 1;
+}
+
+.pig-coin-footer {
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.pig-coin-footer-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-width: 260px;
+  width: 100%;
+  margin: auto;
+}
+.pig-coin-footer-content p {
+  margin-top: 40px;
+  margin-bottom: 0px;
 }

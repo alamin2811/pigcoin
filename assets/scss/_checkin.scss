@@ -9,17 +9,15 @@
     max-width: 570px;
     width: 100%;
     margin: auto;
-    padding: 20px 35px;
+    padding: 15px 35px 15px 24px;
     margin-top: 35px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 20px;
     .pig-icon{
-        min-height: 60px;
-        min-width: 60px;
-        max-height: 60px;
-        max-width: 60px;
+        height: 100%;
+        width: 100%;
         border-radius: 50%;
         overflow: hidden;
         position: relative;
@@ -32,6 +30,84 @@
             width: 100%;
         }
     }
+    .progress {
+        min-height: 80px;
+        min-width: 80px;
+        max-height: 80px;
+        max-width: 80px;
+        padding: 10px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        background: transparent;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after{
+            content: '';
+            border: 3px solid rgba(0, 0, 0, 0.10);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            top: 0px;
+            left: 0px;
+        }
+        .overlay {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: transparent;
+        }
+        .left, 
+        .right {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 3px solid #F02F66;
+            border-radius: 100px 0px 0px 100px;
+            border-right: 0;
+            transform-origin: right;
+        }
+        .left {animation: load1 1s linear forwards;}
+    }
+    .progress:nth-of-type(2) .right, .progress:nth-of-type(3) .right {animation: load2 .5s linear forwards 1s;}
+    
+    .progress:last-of-type .right, .progress:first-of-type .right {animation: load3 .8s linear forwards 1s;}
+    
+}
+.checkin-card-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.checkin-card-btn{
+    border-radius: 30px;
+    border: 2px solid rgba(240, 47, 102, 0.50);
+    min-width: 150px;
+    color: #F02F66;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px; /* 200% */
+    text-transform: uppercase;
+    padding: 10px;
+    background: transparent;
+    transition: 0.4s;
+    &:hover{
+        color: #9D2245;
+        border-radius: 30px;
+        border: 2px solid #9D2245;
+        background: #FFEFED;
+        box-shadow: 0px 3px 0px 0px #9D2245;
+    }
 }
 .pig-checkin-text{
     text-align: left;
@@ -41,5 +117,77 @@
     }
     p{
         margin-bottom: 0px;
+    }
+}
+@keyframes load1 {
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(180deg);}
+}
+@keyframes load2 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {z-index: 100;transform: rotate(270deg);}
+}
+@keyframes load3 {
+    0% {z-index: 100;transform: rotate(180deg);}
+
+    100% {
+        z-index: 100;transform: rotate(315deg);}
+}
+
+.checkin-list{
+    max-width: 570px;
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+    ul{
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        li{
+            border-radius: 30px;
+            border: 2px solid rgba(0, 0, 0, 0.10);
+            background: #FFF;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 30px;
+            .list-left{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 18px;
+                h6{
+                    margin-bottom: 0px;
+                    color: #111;
+                    font-family: "DM Sans";
+                    font-weight: 500;
+                    line-height: 36px; 
+                    a{
+                        color: #111;
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .list-right{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 18px;
+                span{
+                    color: #1BCA41;
+                    text-align: right;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 36px;
+                    img{
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
     }
 }
