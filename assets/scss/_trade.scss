@@ -71,12 +71,15 @@
             text-align: left;
             padding: 5px 25px;
             appearance: none;
+            position: relative;
+            z-index: 1;
         }
         &::after{
             content: url(../../assets/images/icons/drop-icon.svg);
             position: absolute;
             right: 16px;
             top: 13px;
+            z-index: 0;
         }
     }
     .trade-address{

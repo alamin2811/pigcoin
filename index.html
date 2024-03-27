@@ -18,11 +18,68 @@
                     <img src="./assets/images/logo/logo.svg" alt="logo">
                 </a>
                 <div class="header-right">
-                    <a href="#"><img src="./assets/images/icons/global.svg" alt="icon"></a>
+                    <div class="language-dropdown">
+                        <button type="button" class="toggler">
+                            <img src="./assets/images/icons/global.svg" alt="icon" />
+                            <span class="selected">EN</span>
+                        </button>
+                        <div class="language-dropdown-box">
+                            <ul class="list">
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">EN</span>
+                                        <span>English (US)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">EN</span>
+                                        <span>English (UK)</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">ES</span>
+                                        <span>Español</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">FR</span>
+                                        <span>Français</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">Tü</span>
+                                        <span>Türkçe</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">简体</span>
+                                        <span>简体中文</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">ITA</span>
+                                        <span>Italiano</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="list-item">
+                                        <span class="select">العر</span>
+                                        <span>العربية</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a href="#" class="header-social"><img src="./assets/images/icons/tele.png" alt="icon"></a>
                     <a href="#" class="header-social"><img src="./assets/images/icons/x.png" alt="icon"></a>
                     <a href="#" class="header-btn buy-btn">How to buy</a>
-                    <a href="#" class="header-btn tweet-btn">Tweet</a>
+                    <a href="#" class="header-btn tweet-btn">Tweet &nbsp; <img src="./assets/images/icons/tweet-icon.svg" alt="icon"></a>
                 </div>
             </div>
         </div>
@@ -58,6 +115,82 @@
             </div>
         </div>
     </section>
+
+    <section class="checkin-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Checkin</h2>
+            </div>
+            <div class="checkin-list">
+                <ul>
+                    <li>
+                        <div class="list-left">
+                            <img src="./assets/images/icons/x-icon.svg" alt="icon">
+                            <h6>Follow <a href="#" target="_blank">@Pigcoin</a> on Twitter</h6>
+                        </div>
+                        <div class="list-right">
+                            <span><img src="./assets/images/icons/check-green.svg" alt="icon"> Done</span>
+                            <span>+ 10</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <img src="./assets/images/icons/x-icon.svg" alt="icon">
+                            <h6>Retweet <a href="#" target="_blank">@Pigcoin</a> on Twitter</h6>
+                        </div>
+                        <div class="list-right">
+                            <span>+ 5</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <img src="./assets/images/icons/telegram.svg" alt="icon">
+                            <h6>Join <a href="#" target="_blank">@Pigcoinofficail</a> on Telegram</h6>
+                        </div>
+                        <div class="list-right">
+                            <span>+ 10</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <img src="./assets/images/icons/youtube.svg" alt="icon">
+                            <h6>Follow <a href="#" target="_blank">@Pigcoin</a> on Youtube</h6>
+                        </div>
+                        <div class="list-right">
+                            <span>+ 10</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="list-left">
+                            <img src="./assets/images/icons/fb.svg" alt="icon">
+                            <h6>Follow <a href="#" target="_blank">@Pigcoin</a> on Facebook</h6>
+                        </div>
+                        <div class="list-right">
+                            <span>+ 10</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="checkin-card">
+                <div class="checkin-card-left">
+                    <div class="progress">
+                        <div class="pig-icon title timer" data-from="0" data-to="30" data-speed="1500">
+                            <img src="./assets/images/coin/pig-coin.svg" alt="coin">
+                        </div>
+                        <div class="overlay"></div>
+                        <div class="left"></div>
+                        <!-- <div class="right"></div> -->
+                    </div>
+                    <div class="pig-checkin-text">
+                        <h5>Balance: 21.03 $PIG</h5>
+                        <p>24h : 05m to fill</p>
+                        <p>0.05 $PIG/hour</p>
+                    </div>
+                </div>
+                <button class="checkin-card-btn">Claim $PIG</button>
+            </div>
+        </div>
+    </section> 
 
     <section class="what-is-pigcoin-section">
         <div class="container">
@@ -197,82 +330,6 @@
             </ul>
         </div>
     </section>
-    
-    <section class="checkin-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Checkin</h2>
-            </div>
-            <div class="checkin-list">
-                <ul>
-                    <li>
-                        <div class="list-left">
-                            <img src="./assets/images/icons/x-icon.svg" alt="icon">
-                            <h6>Follow <a href="#" target="_blank">@Pigcoin</a> on Twitter</h6>
-                        </div>
-                        <div class="list-right">
-                            <span><img src="./assets/images/icons/check-green.svg" alt="icon"> Done</span>
-                            <span>+ 10</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-left">
-                            <img src="./assets/images/icons/x-icon.svg" alt="icon">
-                            <h6>Retweet <a href="#" target="_blank">@Pigcoin</a> on Twitter</h6>
-                        </div>
-                        <div class="list-right">
-                            <span>+ 5</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-left">
-                            <img src="./assets/images/icons/telegram.svg" alt="icon">
-                            <h6>Join <a href="#" target="_blank">@Pigcoinofficail</a> on Telegram</h6>
-                        </div>
-                        <div class="list-right">
-                            <span>+ 10</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-left">
-                            <img src="./assets/images/icons/youtube.svg" alt="icon">
-                            <h6>Follow <a href="#" target="_blank">@Pigcoin</a> on Youtube</h6>
-                        </div>
-                        <div class="list-right">
-                            <span>+ 10</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list-left">
-                            <img src="./assets/images/icons/fb.svg" alt="icon">
-                            <h6>Follow <a href="#" target="_blank">@Pigcoin</a> on Facebook</h6>
-                        </div>
-                        <div class="list-right">
-                            <span>+ 10</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="checkin-card">
-                <div class="checkin-card-left">
-                    <div class="progress">
-                        <div class="pig-icon title timer" data-from="0" data-to="30" data-speed="1500">
-                            <img src="./assets/images/coin/pig-coin.svg" alt="coin">
-                        </div>
-                        <div class="overlay"></div>
-                        <div class="left"></div>
-                        <!-- <div class="right"></div> -->
-                    </div>
-                    <div class="pig-checkin-text">
-                        <h5>Balance: 21.03 $PIG</h5>
-                        <p>24h : 05m to fill</p>
-                        <p>0.05 $PIG/hour</p>
-                    </div>
-                </div>
-                <button class="checkin-card-btn">Claim $PIG</button>
-            </div>
-        </div>
-    </section> 
 
     <section class="tokenomics-section">
         <div class="container">

@@ -1,0 +1,107 @@
+@mixin dropdownList {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.07);
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+.language-dropdown {
+    position: relative;
+    max-width: 100px;
+    .language-dropdown-box{
+        position: absolute;
+        transform-origin: 50% -30px;
+        z-index: 100;
+        opacity: 0;
+        display: none;
+        transform: rotateX(-15deg) translateZ(0px);
+        top: 19px;
+        left: -40px;
+        transition: 0.5s;
+        padding: 40px;
+    }
+    &.open {
+        .language-dropdown-box{
+            animation: menuAnimetion 0.7s;
+            display: block;
+            transform: none;
+            opacity: 1;
+        }
+    }
+    &:hover{
+        .language-dropdown-box{
+            animation: menuAnimetion 0.7s;
+            display: block;
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    button {
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        width: 100px;
+        height: 50px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 14px;
+        color: #111111;
+        position: relative;
+        &::after {
+            content: url(../images/icons/drop-icon.svg);
+            position: absolute;
+            top: 12px;
+            right: 11px;
+            opacity: 0.4;
+        }
+        img {
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            margin-right: 7.5px;
+        }
+    }
+
+    .list {
+        @include dropdownList();
+        width: 170px;
+        height: auto;
+        right: 0;
+        left: unset;
+        top: 130%;
+        list-style: none;
+        margin: 0px;
+        padding: 12px 30px;
+        
+    }
+
+    .list-item {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #F02F66;
+        line-height: 333%;
+        text-align: left;
+        justify-content: flex-start;
+        
+        &:hover {
+            color: #9D2245;
+            background-color: transparent;
+        }
+        .select{
+            display: none;
+        }
+    }
+}

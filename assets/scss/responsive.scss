@@ -28,7 +28,7 @@
         }
     }
     .header-inner{
-        padding: 20px;
+        padding: 20px 0px;
     }
     .banner-icon{
         margin-bottom: 20px;
@@ -94,7 +94,7 @@
         }
     }
     .checkin-section{
-        padding-top: 80px;
+        padding-bottom: 80px;
     }
     .checkin-list{
         padding-top: 25px;
@@ -108,6 +108,9 @@
     .tokenomics-card{
         margin-bottom: 20px;
         min-height: auto;
+        &.tokenomics-card3{
+            padding: 20px;
+        }
     }
     .trade-section{
         padding-bottom: 80px;
@@ -216,7 +219,7 @@
         }
     }
     .checkin-section{
-        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .faq-section{
         padding-top: 150px;
@@ -230,8 +233,16 @@
 @media only screen and (max-width: 575px){
     .header-inner{
         flex-wrap: wrap;
+        padding: 10px 0px;
     }
-
+    .header-right{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .header-btn{
+        height: 40px !important;
+        margin-top: 10px;
+    }
     .loved-community-section h4{
         margin-bottom: 20px;
     }
@@ -269,7 +280,7 @@
     }
     .banner-content{
         h1{
-            font-size: 40px;
+            font-size: 39px;
         }
     }
     .trade-content {
@@ -282,10 +293,31 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .trade-address-section {
+        .trade-dropdown{
+            min-width: 150px;
+            max-width: 150px;
+            select{
+                font-size: 14px !important;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 480px){
     .banner-content {
+        h1{
+            font-size: 29px;
+            max-width: 375px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        p{
+            max-width: 300px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
         ul{
             li{
                 width: 42% !important;
@@ -294,5 +326,8 @@
                 }
             }
         }
+    }
+    .tokenomics-section{
+        padding-bottom: 50px;
     }
 }
