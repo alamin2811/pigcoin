@@ -21,12 +21,18 @@ body {
     line-height: 30px;
 }
 
-.container {
+.header-container {
     max-width: 1760px;
     width: 100%;
     margin: 0 auto;
     padding: 0px 20px;
 }
+// .container {
+//     max-width: 1760px;
+//     width: 100%;
+//     margin: 0 auto;
+//     padding: 0px 20px;
+// }
 
 h1,
 h2,
@@ -75,3 +81,33 @@ h6{
     }
 }
 
+
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1210px;
+        padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    h2{
+        font-size: 32px;
+        line-height: 150%;
+    }
+    h3{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h5{
+        font-size: 18px;
+    }
+    h6{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 575px) {}
+@media only screen and (max-width: 425px) {}

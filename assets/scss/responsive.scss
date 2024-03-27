@@ -14,3 +14,285 @@
         font-size: 18px;
     }
 }
+@media only screen and (max-width: 991px) {
+    .pigcoin-intro-card {
+        overflow: hidden;
+        padding: 30px 30px 30px 95px;
+        .card-number {
+            left: 20px;
+            width: 50px;
+            padding-top: 28px;
+            h2{
+                font-size: 32px;
+            }
+        }
+    }
+    .header-inner{
+        padding: 20px;
+    }
+    .banner-icon{
+        margin-bottom: 20px;
+    }
+    .banner-section{
+        padding-bottom: 80px;
+        padding-top: 50px;
+    }
+    .banner-content{
+        h1{
+            font-size: 53px;
+            line-height: 150%;
+            margin-bottom: 25px;
+        }
+        p{
+            margin-bottom: 25px;
+        }
+        ul{
+            &.banner-btn-list1{
+                margin-bottom: 30px;
+            }
+            &.chart-list{
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .what-is-pigcoin-card{
+        padding: 50px 30px;
+        h2{
+            margin-bottom: 20px;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    .faq-section{
+        padding-top: 160px;
+        padding-bottom: 70px;
+        .section-title{
+            margin-bottom: 30px;
+        }
+    }
+    .pig-accordion-item {
+        .accordion-header {
+            .accordion-button {
+                background: #FFE2E5;
+                padding: 20px 58px 20px 20px;
+                &::before{
+                    top: 21px;
+                }
+            }
+        }
+    }
+    .pig-sticker-list{
+        margin-top: 30px;
+        ul{
+            gap: 40px;
+            li{
+                img{
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+    .checkin-section{
+        padding-top: 80px;
+    }
+    .checkin-list{
+        padding-top: 25px;
+    }
+    .tokenomics-section{
+        padding: 80px 0px;
+        .section-title{
+            margin-bottom: 30px;
+        }
+    }
+    .tokenomics-card{
+        margin-bottom: 20px;
+        min-height: auto;
+    }
+    .trade-section{
+        padding-bottom: 80px;
+    }
+    .trade-content{
+        padding-top: 30px;
+        ul{
+            li{
+                a{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .pig-coin-footer{
+        padding-top: 0px;
+    }
+    .pig-coin-footer-content{
+        margin-top: 25px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .header-right {
+        .header-social{
+            display: none;
+        }
+    }
+    .header-btn{
+        font-size: 14px !important;
+        width: 120px !important;
+    }
+    .what-is-pigcoin-card {
+        ul{
+            li{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .trade-content {
+        ul{
+            li{
+                a{
+                    width: 155px;
+                    padding: 4px 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .banner-content {
+        h1{
+            font-size: 42px;
+        }
+    }
+    .banner-content {
+        ul{
+            gap: 20px;
+            &.banner-btn-list1,
+            &.banner-btn-list2  {
+                button {
+                    width: 170px;
+                    gap: 10px;
+                    font-size: 16px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+    .pig-checkin-text {
+        h5{
+            font-size: 16px;
+        }
+    }
+    .checkin-card-btn {
+        min-width: 120px;
+        font-size: 14px;
+        padding: 3px;
+    }
+    .banner-content {
+        ul{
+            &.chart-list{
+                gap: 30px;
+                li{
+                    .chart-btn{
+                        &::after{
+                            right: -15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tokenomics-section{
+        padding: 60px 0px;
+    }
+    .trade-section{
+        padding-bottom: 60px;
+    }
+    .pig-coin-footer-content{
+        margin-top: 0px;
+        p{
+            margin-top: 15px;
+        }
+    }
+    .checkin-section{
+        padding-top: 50px;
+    }
+    .faq-section{
+        padding-top: 150px;
+        padding-bottom: 40px;
+    }
+    .banner-section{
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .header-inner{
+        flex-wrap: wrap;
+    }
+
+    .loved-community-section h4{
+        margin-bottom: 20px;
+    }
+
+    .pig-accordion-item {
+        .accordion-header {
+            .accordion-button{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .banner-content{
+        ul{
+            flex-wrap: wrap !important;
+            li{
+                width: 46% !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button, .chart-btn{
+                    width: 100% !important;
+                }
+            }
+            &.chart-list{
+                li{
+                    .chart-btn{
+                        &::after{
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner-content{
+        h1{
+            font-size: 40px;
+        }
+    }
+    .trade-content {
+        ul{
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+    .checkin-card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .banner-content {
+        ul{
+            li{
+                width: 42% !important;
+                button{
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}

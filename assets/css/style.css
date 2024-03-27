@@ -21,7 +21,7 @@ body {
   line-height: 30px;
 }
 
-.container {
+.header-container {
   max-width: 1760px;
   width: 100%;
   margin: 0 auto;
@@ -79,6 +79,30 @@ h6 {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1210px;
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 32px;
+    line-height: 150%;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
   }
 }
 .pigcoin-header {
@@ -606,16 +630,20 @@ h6 {
 }
 .checkin-list ul li .list-left {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 18px;
+}
+.checkin-list ul li .list-left img {
+  margin-top: 3px;
 }
 .checkin-list ul li .list-left h6 {
   margin-bottom: 0px;
   color: #111;
   font-family: "DM Sans";
   font-weight: 500;
-  line-height: 36px;
+  line-height: 150%;
+  text-align: left;
 }
 .checkin-list ul li .list-left h6 a {
   color: #111;
@@ -634,6 +662,8 @@ h6 {
   font-size: 18px;
   font-weight: 500;
   line-height: 36px;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 .checkin-list ul li .list-right span img {
   margin-right: 4px;
@@ -708,6 +738,7 @@ h6 {
   justify-content: center;
   gap: 30px;
   margin-bottom: 40px;
+  padding: 0px;
 }
 .trade-content ul li a {
   display: flex;
@@ -723,6 +754,14 @@ h6 {
   border-radius: 30px;
   border: 2px solid rgba(240, 47, 102, 0.5);
   text-decoration: none;
+  transition: 0.4s;
+}
+.trade-content ul li a:hover {
+  border-radius: 30px;
+  color: #9D2245;
+  border: 2px solid #9D2245;
+  background: #FFEFED;
+  box-shadow: 0px 3px 0px 0px #9D2245;
 }
 
 .trade-address-section {
@@ -778,9 +817,6 @@ h6 {
   overflow: hidden;
   max-width: 100%;
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .trade-address-section .trade-address .hidden {
   display: none;
@@ -793,6 +829,9 @@ h6 {
   font-weight: 500;
   line-height: 36px;
   margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .trade-address-section .trade-address .copy-btn {
   background: transparent;
