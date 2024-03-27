@@ -240,10 +240,6 @@
     flex-wrap: wrap;
     gap: 20px;
   }
-  .checkin-card {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .trade-address-section .trade-dropdown {
     min-width: 150px;
     max-width: 150px;
@@ -272,5 +268,15 @@
   }
   .tokenomics-section {
     padding-bottom: 50px;
+  }
+  .checkin-card {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    padding: 20px 30px;
+  }
+  .checkin-card-left {
+    flex-direction: column;
+    text-align: center;
   }
 }
