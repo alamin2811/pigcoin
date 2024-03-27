@@ -758,7 +758,6 @@ h6 {
 .checkin-list ul li .list-left h6 a {
   color: #111;
   font-weight: 700;
-  text-decoration: none;
 }
 .checkin-list ul li .list-right {
   display: flex;
