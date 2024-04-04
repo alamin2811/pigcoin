@@ -576,7 +576,10 @@ h6 {
 .checkin-card {
   border-radius: 30px;
   border: 2px solid rgba(0, 0, 0, 0.4);
-  background: #FFEFED;
+  background: url(../images/img/checkin-card-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.4);
   max-width: 570px;
   width: 100%;
@@ -667,25 +670,19 @@ h6 {
 }
 
 .checkin-card-btn {
-  border-radius: 30px;
-  border: 2px solid rgba(240, 47, 102, 0.5);
+  border-radius: 50px;
+  background: #F02F66;
+  border: none;
+  box-shadow: 0px 3px 0px 0px #9D2245;
   min-width: 150px;
-  color: #F02F66;
+  color: #FFFFFF;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
   line-height: 36px; /* 200% */
   text-transform: uppercase;
   padding: 10px;
-  background: transparent;
   transition: 0.4s;
-}
-.checkin-card-btn:hover {
-  color: #9D2245;
-  border-radius: 30px;
-  border: 2px solid #9D2245;
-  background: #FFEFED;
-  box-shadow: 0px 3px 0px 0px #9D2245;
 }
 
 .pig-checkin-text {
